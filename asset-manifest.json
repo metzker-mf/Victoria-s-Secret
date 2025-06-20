@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Victoria-s-Secret/static/css/main.1a7488ce.css",
+    "main.js": "/Victoria-s-Secret/static/js/main.ac46dc1a.js",
+    "static/js/341.df7cbf3c.chunk.js": "/Victoria-s-Secret/static/js/341.df7cbf3c.chunk.js",
+    "static/media/MOSHED-2025-6-19-0-3-13-ezgif.com-optimize.gif": "/Victoria-s-Secret/static/media/MOSHED-2025-6-19-0-3-13-ezgif.com-optimize.8a5bd139ad581b1195db.gif",
+    "static/media/jpg": "/Victoria-s-Secret/static/media/35ed857f7d1226b96fdb5ff8214a6782.eb950998cecc84b3b93c.jpg",
+    "static/media/vs-logo.png": "/Victoria-s-Secret/static/media/vs-logo.bc2ff0f0aba34de3c96b.png",
+    "index.html": "/Victoria-s-Secret/index.html",
+    "main.1a7488ce.css.map": "/Victoria-s-Secret/static/css/main.1a7488ce.css.map",
+    "main.ac46dc1a.js.map": "/Victoria-s-Secret/static/js/main.ac46dc1a.js.map",
+    "341.df7cbf3c.chunk.js.map": "/Victoria-s-Secret/static/js/341.df7cbf3c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a7488ce.css",
+    "static/js/main.ac46dc1a.js"
+  ]
+}
