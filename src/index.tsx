@@ -1,15 +1,17 @@
+import { ModalProvider } from '@/app/contexts'
 import { GlobalStyle } from '@/shared'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <ModalProvider>
+      <GlobalStyle />
+      <App />
+    </ModalProvider>
   </React.StrictMode>
 )
 reportWebVitals(console.log)
