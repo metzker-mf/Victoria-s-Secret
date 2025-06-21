@@ -2,15 +2,15 @@ import { ModalContext } from '@/app/contexts'
 import { Header } from '@/app/ui'
 import { HomePage } from '@/pages'
 import { Modal } from '@/shared'
-import { useContext, useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 const audio = require('@/shared/assets/audio/123.mp3')
 
 function App() {
   const audioRef = useRef<HTMLAudioElement>(null)
   const { visible } = useContext(ModalContext)
+  const [, setIsMusic] = useState(true)
   const desiredVolume = 0.4
 
-  const handleButtonPlay = () => {}
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = desiredVolume
@@ -20,12 +20,23 @@ function App() {
     }
   }, [visible])
 
+  const handleToggleMusic = () => {
+    setIsMusic((prev) => {
+      const newState = !prev
+      if (audioRef.current) {
+        newState
+          ? audioRef.current.play().catch((e) => console.error('Playback error:', e))
+          : audioRef.current.pause()
+      }
+      return newState
+    })
+  }
+
   return (
     <>
-      <Header />
       <audio ref={audioRef} src={audio} loop></audio>
-      <button onClick={handleButtonPlay}>play</button>
-      <HomePage />
+      <Header toggleMusic={handleToggleMusic} />
+      {!visible && <HomePage />}
       <Modal />
     </>
   )

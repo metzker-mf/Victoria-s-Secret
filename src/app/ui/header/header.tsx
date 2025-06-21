@@ -1,7 +1,14 @@
 import * as S from './components'
-export const Header = () => {
+
+interface HeaderType {
+  toggleMusic: () => void
+}
+
+export const Header = ({ toggleMusic }: HeaderType) => {
   return (
     <S.Container>
+      <S.MuteIcon onClick={toggleMusic} />
+
       <S.UlContainer>
         <li>Home</li>
         <li>Reaasons</li>

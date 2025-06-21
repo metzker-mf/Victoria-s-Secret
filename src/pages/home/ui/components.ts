@@ -19,7 +19,7 @@ export const VicImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1;
-  animation: ${fadeIn} 1s ease-in-out;
+  animation: ${fadeIn} 3s ease-in-out;
 
   img {
     max-width: 650px;
@@ -31,7 +31,7 @@ export const LogoContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  animation: ${fadeIn} 7s ease-in-out;
+  animation: ${fadeIn} 10s ease-in-out;
 
   img {
     max-width: 200px;
