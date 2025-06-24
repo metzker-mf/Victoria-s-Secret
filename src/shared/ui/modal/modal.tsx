@@ -9,7 +9,7 @@ export const Modal = () => {
   const handleSetVisible = () => {
     setVisible(false)
   }
-  
+
   return (
     <>
       {visible &&

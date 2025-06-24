@@ -14,6 +14,28 @@ export const Container = styled.section`
   flex-direction: column;
 `
 
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+`
+
+export const TextWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  max-width: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 19px;
+  font-family: 'Alk';
+  animation: ${fadeIn} 7s ease-in-out;
+
+  ul {
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+`
+
 export const VicImageContainer = styled.div`
   display: flex;
   justify-content: center;

@@ -1,5 +1,8 @@
+import '@/shared/assets/fonts/alk/alk.css'
+import '@/shared/assets/fonts/izvod/izvod.css'
 import backImage from '@/shared/assets/images/35ed857f7d1226b96fdb5ff8214a6782.jpg'
 import { createGlobalStyle } from 'styled-components'
+
 export const GlobalStyle = createGlobalStyle`
 
   body {
@@ -11,12 +14,13 @@ export const GlobalStyle = createGlobalStyle`
     background-image: url(${backImage});
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
   }
 
   #root {
     overflow-y: auto;
     overflow-x: hidden;
+    min-height: 100vh;
+    background-color:rgba(0, 0, 0, 0.5);
   }
 
   ul,

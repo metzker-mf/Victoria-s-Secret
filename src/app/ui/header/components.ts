@@ -7,6 +7,7 @@ export const Container = styled.header`
   padding: 20px;
   font-size: 20px;
   padding-right: 100px;
+  font-family: 'Alk';
 `
 export const UlContainer = styled.ul`
   display: flex;

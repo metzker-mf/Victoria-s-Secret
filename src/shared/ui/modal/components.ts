@@ -39,6 +39,9 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: 'Alk';
+  font-weight: bold;
+  font-size: 20px;
 `
 
 export const ButtonsWrapper = styled.div``
