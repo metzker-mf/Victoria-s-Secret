@@ -1,6 +1,5 @@
-import { ModalContext } from '@/app/contexts'
-import { Header } from '@/app/ui'
-import { HomePage } from '@/pages'
+import { Header, ModalContext } from '@/app'
+import { HomePage, InfoPage } from '@/pages'
 import { Modal } from '@/shared'
 import { useContext, useEffect, useRef, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
@@ -40,7 +39,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={!visible && <HomePage />} />
-        <Route path="info" element={<div>info</div>} />
+        <Route path="info" element={<InfoPage />} />
         <Route path="memes" element={<div>memes</div>} />
       </Routes>
       <Modal />

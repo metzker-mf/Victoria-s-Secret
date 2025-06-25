@@ -16,11 +16,11 @@ export const HomePage = () => {
         </S.TextWrapper>
         <div>
           <S.LogoContainer>
-            <img src={logo} alt="" />
+            <img src={logo} alt="Лого victoria's secret" />
           </S.LogoContainer>
 
           <S.VicImageContainer>
-            <img src={vicImage} alt="" />
+            <img src={vicImage} alt="Фото девки без руки" />
           </S.VicImageContainer>
         </div>
 

@@ -25,8 +25,8 @@ export const Modal = () => {
                 </S.Title>
 
                 <S.ButtonsWrapper>
-                  <button onClick={handleSetVisible}>die</button>
-                  <button onClick={handleSetVisible}>666</button>
+                  <S.Button onClick={handleSetVisible}>die</S.Button>
+                  <S.Button onClick={handleSetVisible}>666</S.Button>
                 </S.ButtonsWrapper>
               </S.Wrapper>
             </S.Container>

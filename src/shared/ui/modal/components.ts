@@ -30,6 +30,7 @@ export const Wrapper = styled.div`
   border-radius: 20px;
   background-image: url(${modalImage});
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -44,4 +45,23 @@ export const Title = styled.div`
   font-size: 20px;
 `
 
-export const ButtonsWrapper = styled.div``
+export const ButtonsWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+`
+
+export const Button = styled.button`
+  font-family: 'Izvod';
+  font-size: 20px;
+  color: red;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 0.5;
+  }
+`
