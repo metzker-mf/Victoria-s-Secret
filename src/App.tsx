@@ -3,13 +3,14 @@ import { Header } from '@/app/ui'
 import { HomePage } from '@/pages'
 import { Modal } from '@/shared'
 import { useContext, useEffect, useRef, useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 const audio = require('@/shared/assets/audio/123.mp3')
 
 function App() {
   const audioRef = useRef<HTMLAudioElement>(null)
   const { visible } = useContext(ModalContext)
   const [, setIsMusic] = useState(true)
-  const desiredVolume = 0.4
+  const desiredVolume = 0.35
 
   useEffect(() => {
     if (audioRef.current) {
@@ -36,7 +37,12 @@ function App() {
     <>
       <audio ref={audioRef} src={audio} loop></audio>
       <Header toggleMusic={handleToggleMusic} />
-      {!visible && <HomePage />}
+
+      <Routes>
+        <Route path="/" element={!visible && <HomePage />} />
+        <Route path="info" element={<div>info</div>} />
+        <Route path="memes" element={<div>memes</div>} />
+      </Routes>
       <Modal />
     </>
   )

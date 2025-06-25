@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import * as S from './components'
-
 interface HeaderType {
   toggleMusic: () => void
 }
@@ -10,9 +10,15 @@ export const Header = ({ toggleMusic }: HeaderType) => {
       <S.MuteIcon onClick={toggleMusic} />
 
       <S.UlContainer>
-        <li>Home</li>
-        <li>Reaasons</li>
-        <li>Memes</li>
+        <li>
+          <Link to={'/'}>Home</Link>
+        </li>
+        <li>
+          <Link to={'/info'}>Info</Link>
+        </li>
+        <li>
+          <Link to={'/memes'}>Memes</Link>
+        </li>
       </S.UlContainer>
     </S.Container>
   )
